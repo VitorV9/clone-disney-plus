@@ -41,11 +41,11 @@
     </section>
     <section class="shows">
         <nav class="shows__tabs">
-            <button class="shows__tabs__button shows__tabs__button--is-active">Em breve</button>
-            <button class="shows__tabs__button">Mais populares</button>
-            <button class="shows__tabs__button">Mais no Star+</button>
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">Em breve</button>
+            <button data-tab-button="populares" class="shows__tabs__button">Mais populares</button>
+            <button data-tab-button="star_plus" class="shows__tabs__button">Mais no Star+</button>
         </nav>
-        <ul class="shows__list shows__list--is-active">
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
                 <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada" />
             </li>
@@ -65,7 +65,7 @@
                 <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem limites" />
             </li>
         </ul>
-        <ul class="shows__list">
+        <ul data-tab-id="populares" class="shows__list">
             <li class="shows__list__item">
                 <img src="./dist/images/mais_populares/red.jpg" alt="Red" />
             </li>
@@ -85,7 +85,7 @@
                 <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="DR.Pol" />
             </li>
         </ul>
-        <ul class="shows__list">
+        <ul data-tab-id="star_plus" class="shows__list">
             <li class="shows__list__item">
                 <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="Libertadores" />
             </li>
@@ -106,5 +106,7 @@
             </li>
         </ul>  
     </section>
+
+    <script src="./src/main.js"></script>
 </body>
 </html>
