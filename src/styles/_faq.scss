@@ -10,6 +10,11 @@
         list-style: none;
     }
 
+    p {
+        margin-bottom: 15px;
+    }
+
+
     &__questions {
         &__item {
             background-color: #13151d;
@@ -40,6 +45,7 @@
                 overflow: hidden;
                 padding: 0 24px;
                 transition: height, .5s ease;
+                
             }
 
             &--is-open {
