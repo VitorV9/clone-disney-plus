@@ -34,13 +34,16 @@
             &__answer {
                 height: 0;
                 overflow: hidden;
+                padding: 0 24px;
+                transition: height, .5s ease;
             }
 
             &--is-open {
 
                 .faq__questions__item__answer {
                     height: auto;
-                    padding: 24px;
+                    transition: height, .5s ease;
+                    padding-bottom: 24px;
                 }
 
                 .faq__questions__item__question::after {
